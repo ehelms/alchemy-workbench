@@ -14,6 +14,7 @@ AlchemyWorkbench::Application.routes.draw do
   resources :flash_messages, :only => :index
   resources :install, :only => :index
   resources :get_involved, :only => :index
+  resources :table, :only => :index
 
   match 'user_session/login' => 'login#update', :via => :post, :as => 'user_session'
 

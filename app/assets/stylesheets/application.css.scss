@@ -1,7 +1,7 @@
 $primary_color: rgb(103,0,41);
 $static_width: 1152px;
 
-@import "compass/reset";
+@import "alchemy/components/normalize";
 @import "alchemy/composites/shell";
 @import "alchemy/composites/content_elements";
 @import "alchemy/components/helpers";

@@ -16,6 +16,7 @@ gem 'gettext_i18n_rails'
 
 if File.exists? File.expand_path('../alchemy')
   gem 'alchemy', :path => '../alchemy'
+  gem 'alchemy-tables', :path => '../alchemy-tables'
 else
   gem 'alchemy'
 end

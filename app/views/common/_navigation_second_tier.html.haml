@@ -7,6 +7,9 @@
     %li{ :class => ("selected" if current_sub_tab == "form") }
       %a{ "href" => "/form" }
         = "Forms"
+    %li{ :class => ("selected" if current_sub_tab == "table") }
+      %a{ "href" => "/table" }
+        = "Tables"
     %li{ :class => ("selected" if current_sub_tab == "flash_messages") }
       %a{ "href" => "/flash_messages" }
         = "Flash Messages"

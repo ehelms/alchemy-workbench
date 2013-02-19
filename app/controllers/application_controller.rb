@@ -4,6 +4,7 @@ class ApplicationController < ActionController::Base
   layout "website"
 
   helper Alchemy::TranslationHelper
+  helper Alchemy::LayoutHelper
 
   protect_from_forgery
   before_filter :set_locale
