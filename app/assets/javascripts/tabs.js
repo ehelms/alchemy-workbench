@@ -1,6 +1,6 @@
 $(function(){
 
-    $('a[data-component="code-tab"]').live('click', function(e){
+    $('a[data-component="code-tab"]').on('click', function(e){
         e.preventDefault();
 
         var $section = $(this).closest('.code_example_section');
@@ -12,7 +12,7 @@ $(function(){
         showCodeExample($section, type, format);
     });
 
-    $('a[data-component="example-tab"]').live('click', function(e){
+    $('a[data-component="example-tab"]').on('click', function(e){
         e.preventDefault();
 
         $('a[data-component="example-tab"]').parent().removeClass('selected');

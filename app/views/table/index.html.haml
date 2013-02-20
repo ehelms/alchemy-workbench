@@ -1,2 +1,20 @@
 = javascript 'component/tables.js', 'table_example'
 = stylesheet 'component/tables'
+
+= content_for(:content) do
+  %h3
+    Backbone Table
+  #backbone-table
+
+  %br
+  %br
+  %h3
+    Backbone Custom Table
+  #backbone-custom-table
+
+  %br
+  %br
+  %h3
+    Angular Table
+  #angular-table{ 'ng-app' => 'alchemy' }
+    %alchemy-table{ 'ng-controller' => 'table_controller', 'alchemy-table-select_all' => 'false' }
